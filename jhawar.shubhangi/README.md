@@ -1,3 +1,3 @@
 Shubhangi Jhawar 
 
-https://sjhawar.com/wnm608/jhawar.shubhangi/README.md
+http://sjhawar.com/wnm608/jhawar.shubhangi/README.md
