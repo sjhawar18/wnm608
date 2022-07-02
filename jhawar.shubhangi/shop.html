@@ -3,8 +3,12 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	
 	<title> Peonies & Flora </title>
+	
 	<link rel="stylesheet" href="lib/css/styleguide.css">
+	<link rel="stylesheet" href="lib/css/gridsystem.css">
 	<link rel="stylesheet" href="css/storetheme.css">
 </head>
 
@@ -30,54 +34,25 @@
      	</div>
 	</header>
 
-	<div class="container">
-		<article id="item1" class="article card soft">
-			<div class="display-flex flex-align-center">
-				<div class="flex-stretch">
-		      		<h2>Daisy Boquet</h2>
-		    	</div>
-		    
-		    	<div class="flex-none">
-		    		<h3>$9.99</h3>
-	    		</div>
+    <div class="container">
+		<div class="grid gap xs-small md-medium">
+			<!-- .col-xs-6.col-md-3*4>.card{Card} -->
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft"><img src="img/1.jpg" alt="item 1" class="media-image"></div>
 			</div>
-		
-			<div class="article-body shop-item">
-				<img src="img/1.jpg" alt="item 1">
-			</div>
-		</article>
 
-		<article id="item2" class="article card soft">
-			<div class="display-flex flex-align-center">
-				<div class="flex-stretch">
-		      		<h2>Rose Boquet</h2>
-		    	</div>
-		    
-		    	<div class="flex-none">
-		    		<h3>$14.99</h3>
-	    		</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft"><img src="img/2.jpg" alt="item 2" class="media-image"></div> 
 			</div>
-		
-			<div class="article-body shop-item">
-				<img src="img/2.jpg" alt="item 2">
-			</div>
-		</article>
 
-		<article id="item3" class="article card soft">
-			<div class="display-flex flex-align-center">
-				<div class="flex-stretch">
-		      		<h2>Pot Boquet</h2>
-		    	</div>
-		    
-		    	<div class="flex-none">
-		    		<h3>$19.99</h3>
-	    		</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft"><img src="img/3.jpg" alt="item 3" class="media-image"></div>
 			</div>
-		
-			<div class="article-body shop-item">
-				<img src="img/3.jpg" alt="item 3">
+
+			 <div class="col-xs-6 col-md-3">
+				<div class="card soft"><img src="img/2.jpg" alt="item 2" class="media-image"></div>
 			</div>
-		</article>
+		</div>
 	</div>
 </body>
 </html>
