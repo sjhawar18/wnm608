@@ -6,29 +6,12 @@
 	<title> Peonies & Flora </title>
 	<link rel="stylesheet" href="lib/css/styleguide.css">
 	<link rel="stylesheet" href="css/storetheme.css">
+
+	<?php include "parts/meta.php"; ?>
 </head>
 
 <body>
-	<header class="navbar">
-		<div class="container display-flex">
-	 		<div class="flex-none">
-		   		<h1>Peonies & Flora</h1>
-			</div>
-		
-			<div class="flex-stretch"></div>
-
-			<nav class="flex-none nav">
-	       		<nav class="nav">
-		    		<ul class="container display-flex">
-			    		<li> <a href="index.html">Home</a></li>
-			    		<li> <a href="shop.html">Shop</a></li>
-			    		<li> <a href="about.html">About</a></li>
-			    		<li> <a href="contact.html">Contact</a></li>
-		     		</ul>
-	       		</nav>
-	       	</nav>
-     	</div>
-	</header>
+	<?php include "parts/navbar.php"; ?>
 
 	<div class="container">
 		<article id="article1" class="article card soft">
