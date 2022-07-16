@@ -1,4 +1,7 @@
+
 <meta name="viewport" conttent="width=device-width">
+
+<base href="http://sjhawar.com/wnm608/jhawar.shubhangi/">
 
 <link rel="stylesheet" href="lib/css/styleguide.css">
 <link rel="stylesheet" href="lib/css/gridsystem.css">

@@ -1,0 +1,38 @@
+[
+	{
+		"name":"Shubhangi Jhawar",
+		"type":"Student",
+		"email":"sjhawar2@art.edu",
+		"classes": [608,617,820]
+	},
+	{
+		"name":"Phoebe Buffay",
+		"type":"Singer",
+		"email":"phoebe@earthlink.net",
+		"classes": [601,608,617,820]
+	},
+	{
+		"name":"Joey Tribbiani",
+		"type":"Actor",
+		"email":"joeytrib@aol.com",
+		"classes": [601,608,617,820]
+	},
+	{
+		"name":"Chandler Bing",
+		"type":"Who knows",
+		"email":"bingtastic@yahoo.com",
+		"classes": [601,608,617,820]
+	},
+	{
+		"name":"Monica Gellar",
+		"type":"Chef",
+		"email":"mgellar1973@hotmail.com",
+		"classes": [601,608,617,820]
+	},
+	{
+		"name":"Ross Gellar",
+		"type":"Professor",
+		"email":"rgellar1953@hotmail.com",
+		"classes": [601,820]
+	}
+]
