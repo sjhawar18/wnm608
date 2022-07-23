@@ -19,7 +19,7 @@ function cartListTemplate($r,$o){
 return $r.<<<HTML
 <div class="display-flex">
     <div class="flex-none images-thumbs">
-        <img src="/wnm608/jhawar.shubhangi/img/$o->images">
+        <img src="/wnm608/jhawar.shubhangi/img/$o->thumbnail">
     </div>
     <div class="flex-stretch">
         <strong>$o->name</strong>
