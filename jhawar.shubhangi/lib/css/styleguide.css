@@ -293,6 +293,9 @@ a:hover {
 	text-align: center;
 	padding: 0.5em 0.1em;
 }
+.form-button.inline {
+	width: initial;
+}
 .form-button:hover {
 	text-decoration: none;
 }

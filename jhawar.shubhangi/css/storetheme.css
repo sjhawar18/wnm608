@@ -145,3 +145,11 @@ body {
 	height: 6em;
 	object-fit: contain;
 }
+
+span.badge:not(:empty)::before {
+	content: '(';
+}
+
+span.badge:not(:empty)::after {
+	content: ')';
+}
