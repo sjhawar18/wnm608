@@ -153,3 +153,7 @@ span.badge:not(:empty)::before {
 span.badge:not(:empty)::after {
 	content: ')';
 }
+
+.button-stretch {
+	margin-right: 10px;
+}

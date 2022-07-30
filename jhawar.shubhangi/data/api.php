@@ -6,13 +6,11 @@ $output = [];
 
 $data = json_decode(file_get_contents("php://input"));
 
-//print_p($data);
-
 switch($data->type) {
 	case "products_all":
 	  $output['result'] = makeQuery(makeConn(),"SELECT *
 	  	FROM `products`
-	  	ORDER BY `date_create` DESC
+	  	ORDER BY `date_created` DESC
 	  	LIMIT 12");
 	  break;
 
@@ -23,22 +21,23 @@ switch($data->type) {
 	  	   `name` LIKE '%$data->search%' OR
 	  	   `description` LIKE '%$data->search%' OR
 	  	   `category` LIKE '%$data->search%' 
-	  	ORDER BY `date_create` DESC
+	  	ORDER BY `date_created` DESC
 	  	LIMIT 12");
 	  break;
 
 	  case "product_filter":
 	  $output['result'] = makeQuery(makeConn(),"SELECT *
 	  	FROM `products`
-	  	WHERE `$data->column` LIKE `$data->value`
-	  	ORDER BY `date_create` DESC
+	  	WHERE 
+	  		`$data->column` LIKE '%$data->value%'
+	  	ORDER BY `date_created` DESC
 	  	LIMIT 12");
 	  break;
 
 	  case "product_sort":
 	  $output['result'] = makeQuery(makeConn(),"SELECT *
 	  	FROM `products`
-	  	ORDER BY `date->column` $data->dir
+	  	ORDER BY `$data->column` $data->dir
 	  	LIMIT 12");
 	  break;
 
