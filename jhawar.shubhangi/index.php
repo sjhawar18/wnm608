@@ -1,5 +1,6 @@
 <?php 
-include_once "lib/php/functions.php"; 
+include_once "lib/php/functions.php";
+include_once "parts/templates.php";  
 ?>
 
 <!DOCTYPE HTML>
@@ -51,6 +52,13 @@ include_once "lib/php/functions.php";
 				</p>
 			</div>
 		</article>
+	</div>
+
+	<div class="container">
+		<h2>Latest Bouquet</h2>
+		<?php recommendedCategory("Bouquet"); ?>
+		<h2>Latest Flowers</h2>
+		<?php recommendedCategory("Flowers"); ?>
 	</div>
 </body>
 </html>
