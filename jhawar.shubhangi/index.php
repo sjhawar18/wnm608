@@ -58,7 +58,7 @@ include_once "parts/templates.php";
 		<h2>Latest Bouquet</h2>
 		<?php recommendedCategory("Bouquet"); ?>
 		<h2>Latest Flowers</h2>
-		<?php recommendedCategory("Flowers"); ?>
+		<?php recommendedCategory("Flower"); ?>
 	</div>
 </body>
 </html>

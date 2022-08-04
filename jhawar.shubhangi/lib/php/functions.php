@@ -2,10 +2,6 @@
 
 session_start();
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
 function print_p($v) {
       echo "<pre>",print_r($v),"</pre>";
 }
@@ -26,14 +22,12 @@ function makeConn(){
 
 function makePDOConn() {
       try {
-        $conn = new PDO(...PDOAuth());
+            $conn = new PDO(...PDOAuth());
       }catch(PDOException $e) {
             die($e->getMessage());
       }
       return $conn;
 }
-
-
 
 function makeQuery ($conn,$qry){
       $result = $conn->query($qry);
