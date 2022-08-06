@@ -3,13 +3,12 @@
 include_once "lib/php/functions.php";
 include_once "parts/templates.php";
 
-$cart=
-
-//$cart = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id` IN(4,7,5)");
+$cart = getCart();
 
 $cart_items = getCartItems();
 
-?><!DOCTYPE HTML>
+?>
+<!DOCTYPE HTML>
 <html lang="en">
 
 <head>
@@ -28,13 +27,13 @@ $cart_items = getCartItems();
 		<h2>In your Cart</h2>
 
 		<?php
-
-		if(count($cart)) {
+			if(count($cart)) {
 		?>	
+
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-7">
 				<div class="card soft">
-					<?= array_reduce(getCartItems(),'cartListTemplate') ?>
+					<?= array_reduce($cart_items,'cartListTemplate') ?>
 		        </div>
             </div>
             <div class="col-xs-12 col-md-5">
@@ -46,21 +45,20 @@ $cart_items = getCartItems();
             	</div>
             </div>
         </div>
+        
         <?php
-
-		} else {
-			?>
+			} else {
+		?>
 			
-			<div class="card soft">
-				<p>No items in cart</p>
-			</div>
+		<div class="card soft">
+			<p>No items in cart</p>
+		</div>
 
-				<h3> Other Recommendation</h3>
-				<?php recommendedAnything(6); ?>
-				<?php
-
+		<h3> Other Recommendation</h3>
+		<?php 
+			recommendedAnything(6);
 			}
-			?>
+		?>
     </div>	
 </body>
 </html>

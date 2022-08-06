@@ -145,6 +145,7 @@ a:hover {
 	background-color: var(--color-neutral-medium);
 	transition: all 0.3s;
 }
+
 .nav-material .active a::after {
 	height: 4px;
 }
@@ -153,8 +154,7 @@ a:hover {
 	background-color: var(--color-neutral-medium);
 	color: var(--color-white);
 	line-height: var(--header-height);
-	margib-bottom: 1em;
-	
+	margin-bottom: 1em;
 }
 .navbar h1 {
 	font-size: 1em;
@@ -196,7 +196,8 @@ a:hover {
 .card.flat {
 	paddidng: 0;
 }
-[class*='col-']> .card {
+
+[class*='col-']>.card {
 	height: 100%;
 	margin: 0;
 }

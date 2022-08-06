@@ -66,15 +66,15 @@ $taxedfixed = number_format($cartprice*1.0725,2,'.','');
 return <<<HTML
     <div class="card-section display-flex">
         <div class="flex-stretch"><strong>Sub Total</strong></div>
-            <div class="flex-none">&dollar;$pricefixed</div>
+        <div class="flex-none">&dollar;$pricefixed</div>
     </div>
     <div class="card-section display-flex">
         <div class="flex-stretch"><strong>Taxes</strong></div>
-            <div class="flex-none">&dollar;$taxfixed</div>
+        <div class="flex-none">&dollar;$taxfixed</div>
     </div>
     <div class="card-section display-flex">
         <div class="flex-stretch"><strong>Total</strong></div>
-            <div class="flex-none">&dollar;$taxedfixed</div>
+        <div class="flex-none">&dollar;$taxedfixed</div>
     </div>
 HTML;
 }
