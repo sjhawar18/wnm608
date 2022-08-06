@@ -18,7 +18,7 @@ include_once "parts/templates.php";
 	<?php include "parts/meta.php"; ?>
 </head>
 
-<body>
+<body class="flush">
 	<?php include "parts/navbar.php"; ?>
 
 	<div class="container">

@@ -47,12 +47,15 @@ a:hover {
 .display-inline-flex { display:inline-flex; }
 .display-block { display:block; }
 .display-inline-block { display:inline-block; }
+
 .flex-stretch { flex:1 1 auto; }
 .flex-none { flex:none; }
+
 .flex-align-center { align-items: center; }
 .flex-justify-center { justify-content: center; }
 
 .flex-column { flex-direction: column; }
+.flex-wrap { flex-wrap; }
 
 
 /* Small Classes */
@@ -150,6 +153,8 @@ a:hover {
 	background-color: var(--color-neutral-medium);
 	color: var(--color-white);
 	line-height: var(--header-height);
+	margib-bottom: 1em;
+	
 }
 .navbar h1 {
 	font-size: 1em;
@@ -158,6 +163,10 @@ a:hover {
 }
 .navbar a {
 	padding: 0 0.5em;
+}
+
+.flush>.navbar {
+	margin-bottom:0;
 }
 
 /* CARD */
@@ -186,6 +195,10 @@ a:hover {
 }
 .card.flat {
 	paddidng: 0;
+}
+[class*='col-']> .card {
+	height: 100%;
+	margin: 0;
 }
 
 .card-section~.card-section {
