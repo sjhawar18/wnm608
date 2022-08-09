@@ -13,8 +13,8 @@
 	--header-height:3rem;
 	--spacing:1rem;
 	
-	--font-serif: Georgia, "Times New Roman", serif;
-	--font-sans: Helvetica, Arial, sans-serif;
+	--font-serif: Georgia, "Open Sans", serif;
+	--font-sans: Noto Sans, Arial, sans-serif;
 }
 
 body {
@@ -187,11 +187,11 @@ a:hover {
 	border: 2px solid var(--color-neutral-medium);
 }
 .card.dark {
-	background-color: var(--color-netural-dark);
+	background-color: var(--color-neutral-dark);
 	color: var(--color-neutral-light);
 }
 .card.medium {
-	background-color: var(--color-netural-medium);
+	background-color: var(--color-neutral-medium);
 }
 .card.flat {
 	paddidng: 0;
@@ -348,7 +348,7 @@ a:hover {
 	position: absolute;
 	top: 50%;
 	right: 0.2em;
-	transition: translateY(-50%);
+	transform: translateY(-50%);
 	pointer-events: none;
 	color: var(--color-neutral-medium);
 }
@@ -383,13 +383,13 @@ a:hover {
 	font-family: Georgia ;
 }
 #h2 {
-	font-family:Times New Roman;
+	font-family:Open Sans;
 }
 #h3 {
-	font-family:Baskerville ;
+	font-family:Baskervville ;
 }
 #p1 {
-	font-family: Helvetica ;
+	font-family: Noto Sans ;
 }
 #p2 {
 	font-family: Arial;
